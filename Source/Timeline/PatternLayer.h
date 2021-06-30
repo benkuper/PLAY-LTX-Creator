@@ -22,6 +22,8 @@ public:
     ~PatternClipManager() {}
 
     PatternLayer* patternLayer;
+
+    LayerBlock* createItem() override;
 };
 
 class PatternLayer :
@@ -32,6 +34,10 @@ public:
     ~PatternLayer();
 
     PatternClipManager clipManager;
+
+
+    SequenceLayerPanel* getPanel() override;
+    SequenceLayerTimeline* getTimelineUI() override;
 
     String getTypeString() const override { return "Patterns"; }
     static PatternLayer* create(Sequence* s, var params) { return new PatternLayer(s, params); }

@@ -9,12 +9,19 @@
 */
 
 #include "Pattern.h"
+#include "ui/PatternUI.h"
 
 Pattern::Pattern(const String& name, var params) :
     BaseItem(name, false)
 {
+    itemDataType = "Pattern";
 }
 
 Pattern::~Pattern()
 {
+}
+
+PatternUI* Pattern::createUI()
+{
+    return new PatternUI(this);
 }

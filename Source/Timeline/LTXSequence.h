@@ -26,8 +26,6 @@ public:
 	LTXSequence();
 	virtual ~LTXSequence();
 
-	Factory<SequenceLayer> layerFactory;
-
 	//virtual void clearItem() override;
 
 	JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(LTXSequence)

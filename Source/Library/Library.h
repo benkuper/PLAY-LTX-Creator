@@ -19,4 +19,9 @@ public:
 
     Library();
     ~Library();
+
+    //ui
+    IntParameter* gridThumbSize;
+    
+    Factory<Pattern> factory;
 };

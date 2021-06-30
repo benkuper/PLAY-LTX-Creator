@@ -12,6 +12,7 @@
 #include "Prop/PropManager.h"
 #include "Library/Library.h"
 #include "Timeline/LTXSequenceManager.h"
+#include "Audio/AudioManager.h"
 
 LTXEngine::LTXEngine() :
 	Engine(ProjectInfo::projectName, ".ltx")
@@ -31,6 +32,7 @@ LTXEngine::~LTXEngine()
 	LTXSequenceManager::deleteInstance();
 	Library::deleteInstance();
 	PropManager::deleteInstance();
+	AudioManager::deleteInstance();
 }
 
 void LTXEngine::clearInternal()
@@ -45,12 +47,14 @@ var LTXEngine::getJSONData()
 {
 	var data = Engine::getJSONData();
 	data.getDynamicObject()->setProperty(Library::getInstance()->shortName, Library::getInstance()->getJSONData());
+	data.getDynamicObject()->setProperty(LTXSequenceManager::getInstance()->shortName, LTXSequenceManager::getInstance()->getJSONData());
 	return data;
 }
 
 void LTXEngine::loadJSONDataInternalEngine(var data, ProgressTask* loadingTask)
 {
-	data.getDynamicObject()->setProperty(Library::getInstance()->shortName, Library::getInstance()->getJSONData());
+	Library::getInstance()->loadJSONData(data.getProperty(Library::getInstance()->shortName, var()));
+	LTXSequenceManager::getInstance()->loadJSONData(data.getProperty(LTXSequenceManager::getInstance()->shortName, var()));
 }
 
 String LTXEngine::getMinimumRequiredFileVersion()

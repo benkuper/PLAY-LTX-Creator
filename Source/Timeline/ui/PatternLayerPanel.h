@@ -9,3 +9,15 @@
 */
 
 #pragma once
+
+#include "../PatternLayer.h"
+
+class PatternLayerPanel :
+    public SequenceLayerPanel
+{
+public:
+    PatternLayerPanel(PatternLayer* layer);
+    ~PatternLayerPanel();
+
+    PatternLayer* patternLayer;
+};

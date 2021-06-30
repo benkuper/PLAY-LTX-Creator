@@ -2,6 +2,8 @@
 
 String getAppVersion();
 
+#include "Audio/AudioManager.h"
+
 LTXPlayCreatorApplication::LTXPlayCreatorApplication() :
 	OrganicApplication("LTX Play Creator", true, ImageCache::getFromMemory(BinaryData::icon_png, BinaryData::icon_pngSize))
 {
@@ -25,6 +27,8 @@ void LTXPlayCreatorApplication::initialiseInternal(const String&)
 
 	OSCRemoteControl::getInstance()->localPort->defaultValue = 27000;
 	OSCRemoteControl::getInstance()->localPort->resetValue();
+
+	GlobalSettings::getInstance()->addChildControllableContainer(AudioManager::getInstance());
 }
 
 bool LTXPlayCreatorApplication::moreThanOneInstanceAllowed()

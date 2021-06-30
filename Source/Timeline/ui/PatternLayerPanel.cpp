@@ -9,3 +9,13 @@
 */
 
 #include "PatternLayerPanel.h"
+
+PatternLayerPanel::PatternLayerPanel(PatternLayer* layer) :
+    SequenceLayerPanel(layer),
+    patternLayer(layer)
+{
+}
+
+PatternLayerPanel::~PatternLayerPanel()
+{
+}

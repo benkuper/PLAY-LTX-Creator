@@ -9,12 +9,19 @@
 */
 
 #include "ColorPattern.h"
+#include "ui/PatternUI.h"
 
 ColorPattern::ColorPattern(var params) :
     Pattern(getTypeString(), params)
 {
+    color = addColorParameter("Color", "Color for this pattern", BLUE_COLOR);
 }
 
 ColorPattern::~ColorPattern()
 {
+}
+
+PatternUI* ColorPattern::createUI()
+{
+    return new ColorPatternUI(this);
 }

@@ -19,5 +19,9 @@ public:
     PicturePattern(var params = var());
     ~PicturePattern();
 
+    FileParameter* file;
+
+    PatternUI* createUI() override;
+
     virtual String getTypeString() const override { return "Picture"; }
 };

@@ -10,12 +10,14 @@
 
 #include "LTXSequence.h"
 #include "PatternLayer.h"
+#include "Audio/AudioManager.h"
 
 LTXSequence::LTXSequence()
 {
-    layerFactory.defs.add(SequenceLayerManager::LayerDefinition::createDef("", "Patterns", &PatternLayer::create, this));
-    layerFactory.defs.add(SequenceLayerManager::LayerDefinition::createDef("", "Audio", &AudioLayer::create, this));
+    layerManager->factory.defs.add(SequenceLayerManager::LayerDefinition::createDef("", "Patterns", &PatternLayer::create, this));
+    layerManager->factory.defs.add(SequenceLayerManager::LayerDefinition::createDef("", "Audio", &AudioLayer::create, this));
 
+    setAudioDeviceManager(&AudioManager::getInstance()->am);
 }
 
 LTXSequence::~LTXSequence()

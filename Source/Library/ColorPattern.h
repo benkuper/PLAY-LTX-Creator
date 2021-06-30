@@ -19,5 +19,9 @@ public:
     ColorPattern(var params = var());
     ~ColorPattern();
 
+    ColorParameter* color;
+
+    PatternUI* createUI() override;
+
     virtual String getTypeString() const override { return "Color"; }
 };

@@ -1,4 +1,5 @@
 #include "MainComponent.h"
+#include "Library/ui/LibraryUI.h"
 #include "Timeline/LTXSequenceManager.h"
 
 //==============================================================================
@@ -21,6 +22,7 @@ void MainComponent::init()
 	//ShapeShifterFactory::getInstance()->defs.add(new ShapeShifterDefinition("Custom Variables", &CVGroupManagerUI::create));
 	//ShapeShifterFactory::getInstance()->defs.add(new ShapeShifterDefinition("Morpher", &MorpherPanel::create));
 
+	ShapeShifterFactory::getInstance()->defs.add(new ShapeShifterDefinition("Library", &LibraryUI::create));
 	ShapeShifterFactory::getInstance()->defs.add(new ShapeShifterDefinition("Sequences", &createSequenceManagerUI));
 	ShapeShifterFactory::getInstance()->defs.add(new ShapeShifterDefinition("Sequence Editor", &TimeMachineView::create));
 

@@ -9,3 +9,27 @@
 */
 
 #pragma once
+
+#include "../PatternClip.h"
+
+class PatternClipUI :
+    public LayerBlockUI
+{
+public:
+    PatternClipUI(PatternClip* clip);
+    ~PatternClipUI();
+
+    Image img;
+
+    bool colorMode;
+    Colour color;
+
+    PatternClip* clip;
+
+    void updatePattern();
+
+    void paint(Graphics& g) override;
+    void resizedBlockInternal() override;
+
+    void controllableFeedbackUpdateInternal(Controllable* c) override;
+};

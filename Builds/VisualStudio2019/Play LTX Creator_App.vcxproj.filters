@@ -5,6 +5,12 @@
     <Filter Include="Play LTX Creator\Resources">
       <UniqueIdentifier>{28E8F9EF-E198-C0CA-CA80-2E0085F8781C}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Play LTX Creator\Source\Audio\ui">
+      <UniqueIdentifier>{30183C8F-BB29-84DC-D209-75236ADDD2DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Play LTX Creator\Source\Audio">
+      <UniqueIdentifier>{F39D8ABB-B536-2D1A-35CA-9F843FD94E5F}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Play LTX Creator\Source\Library\ui">
       <UniqueIdentifier>{C08CF554-86F9-5BFA-576E-9124C9064EEB}</UniqueIdentifier>
     </Filter>
@@ -730,6 +736,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\Audio\ui\AudioManagerHardwareEditor.cpp">
+      <Filter>Play LTX Creator\Source\Audio\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Audio\AudioManager.cpp">
+      <Filter>Play LTX Creator\Source\Audio</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Library\ui\LibraryUI.cpp">
       <Filter>Play LTX Creator\Source\Library\ui</Filter>
     </ClCompile>
@@ -3687,6 +3699,12 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Source\Audio\ui\AudioManagerHardwareEditor.h">
+      <Filter>Play LTX Creator\Source\Audio\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Audio\AudioManager.h">
+      <Filter>Play LTX Creator\Source\Audio</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\Library\ui\LibraryUI.h">
       <Filter>Play LTX Creator\Source\Library\ui</Filter>
     </ClInclude>
@@ -6828,6 +6846,9 @@
       <Filter>Play LTX Creator\Resources</Filter>
     </None>
     <None Include="..\..\Resources\icon.png">
+      <Filter>Play LTX Creator\Resources</Filter>
+    </None>
+    <None Include="..\..\Resources\picture.png">
       <Filter>Play LTX Creator\Resources</Filter>
     </None>
     <None Include="..\..\..\..\..\..\..\Softwares\JUCE\modules\juce_audio_devices\native\oboe\CMakeLists.txt">

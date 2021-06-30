@@ -2,13 +2,25 @@
 
 <JUCERPROJECT id="Wqh4gx" name="Play LTX Creator" projectType="guiapp" useAppConfig="0"
               addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" version="1.0.0b1"
-              projectLineFeed="&#10;">
+              projectLineFeed="&#10;" headerPath="../../Source">
   <MAINGROUP id="FsRn25" name="Play LTX Creator">
     <GROUP id="{3094F91F-6C12-2649-E217-4C08894853DC}" name="Resources">
       <FILE id="bnapWl" name="crash.png" compile="0" resource="1" file="Resources/crash.png"/>
       <FILE id="umEMOa" name="icon.png" compile="0" resource="1" file="Resources/icon.png"/>
+      <FILE id="SQ7h8R" name="picture.png" compile="0" resource="1" file="Resources/picture.png"/>
     </GROUP>
     <GROUP id="{5849EB62-FA37-9DFE-937F-06074B92E473}" name="Source">
+      <GROUP id="{9BA79223-95DA-60A1-1FD6-593EB1EB37E6}" name="Audio">
+        <GROUP id="{E117C957-526C-D7DA-90C6-593054A7273D}" name="ui">
+          <FILE id="b4wIsq" name="AudioManagerHardwareEditor.cpp" compile="1"
+                resource="0" file="Source/Audio/ui/AudioManagerHardwareEditor.cpp"/>
+          <FILE id="fuIIrn" name="AudioManagerHardwareEditor.h" compile="0" resource="0"
+                file="Source/Audio/ui/AudioManagerHardwareEditor.h"/>
+        </GROUP>
+        <FILE id="UfwI1t" name="AudioManager.cpp" compile="1" resource="0"
+              file="Source/Audio/AudioManager.cpp"/>
+        <FILE id="jADEBt" name="AudioManager.h" compile="0" resource="0" file="Source/Audio/AudioManager.h"/>
+      </GROUP>
       <GROUP id="{23D9AA80-8EBB-DB54-390D-1095E570AB0C}" name="Library">
         <GROUP id="{01D034F9-C9A1-7AE7-22C4-2458A0EDA0E5}" name="ui">
           <FILE id="zSDjAL" name="LibraryUI.cpp" compile="1" resource="0" file="Source/Library/ui/LibraryUI.cpp"/>
