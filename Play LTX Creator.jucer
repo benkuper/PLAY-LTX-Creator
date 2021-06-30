@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="Wqh4gx" name="Play LTX Creator" projectType="guiapp" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" version="1.0.0b1"
+              projectLineFeed="&#10;">
+  <MAINGROUP id="FsRn25" name="Play LTX Creator">
+    <GROUP id="{3094F91F-6C12-2649-E217-4C08894853DC}" name="Resources">
+      <FILE id="bnapWl" name="crash.png" compile="0" resource="1" file="Resources/crash.png"/>
+      <FILE id="umEMOa" name="icon.png" compile="0" resource="1" file="Resources/icon.png"/>
+    </GROUP>
+    <GROUP id="{5849EB62-FA37-9DFE-937F-06074B92E473}" name="Source">
+      <GROUP id="{23D9AA80-8EBB-DB54-390D-1095E570AB0C}" name="Library">
+        <GROUP id="{01D034F9-C9A1-7AE7-22C4-2458A0EDA0E5}" name="ui">
+          <FILE id="zSDjAL" name="LibraryUI.cpp" compile="1" resource="0" file="Source/Library/ui/LibraryUI.cpp"/>
+          <FILE id="GeULjc" name="LibraryUI.h" compile="0" resource="0" file="Source/Library/ui/LibraryUI.h"/>
+          <FILE id="PDLB1L" name="PatternUI.cpp" compile="1" resource="0" file="Source/Library/ui/PatternUI.cpp"/>
+          <FILE id="Xs56u1" name="PatternUI.h" compile="0" resource="0" file="Source/Library/ui/PatternUI.h"/>
+        </GROUP>
+        <FILE id="SC5WCK" name="ColorPattern.cpp" compile="1" resource="0"
+              file="Source/Library/ColorPattern.cpp"/>
+        <FILE id="Ccvn6o" name="ColorPattern.h" compile="0" resource="0" file="Source/Library/ColorPattern.h"/>
+        <FILE id="SUxk9c" name="Library.cpp" compile="1" resource="0" file="Source/Library/Library.cpp"/>
+        <FILE id="pkuA1E" name="Library.h" compile="0" resource="0" file="Source/Library/Library.h"/>
+        <FILE id="e9Orr7" name="Pattern.cpp" compile="1" resource="0" file="Source/Library/Pattern.cpp"/>
+        <FILE id="LwWELp" name="Pattern.h" compile="0" resource="0" file="Source/Library/Pattern.h"/>
+        <FILE id="M85PY1" name="PicturePattern.cpp" compile="1" resource="0"
+              file="Source/Library/PicturePattern.cpp"/>
+        <FILE id="WuXw15" name="PicturePattern.h" compile="0" resource="0"
+              file="Source/Library/PicturePattern.h"/>
+      </GROUP>
+      <GROUP id="{7A33E760-FFEF-940C-FA6B-27582406E79D}" name="Timeline">
+        <GROUP id="{8582427E-FE6C-28F4-8BE0-6AC5D3E5CC08}" name="ui">
+          <FILE id="ijFxN5" name="PatternClipUI.cpp" compile="1" resource="0"
+                file="Source/Timeline/ui/PatternClipUI.cpp"/>
+          <FILE id="IAVv8z" name="PatternClipUI.h" compile="0" resource="0" file="Source/Timeline/ui/PatternClipUI.h"/>
+          <FILE id="p9AkcK" name="PatternLayerPanel.cpp" compile="1" resource="0"
+                file="Source/Timeline/ui/PatternLayerPanel.cpp"/>
+          <FILE id="xGpICt" name="PatternLayerPanel.h" compile="0" resource="0"
+                file="Source/Timeline/ui/PatternLayerPanel.h"/>
+          <FILE id="hPJdFi" name="PatternLayerTimeline.cpp" compile="1" resource="0"
+                file="Source/Timeline/ui/PatternLayerTimeline.cpp"/>
+          <FILE id="GbLFYL" name="PatternLayerTimeline.h" compile="0" resource="0"
+                file="Source/Timeline/ui/PatternLayerTimeline.h"/>
+        </GROUP>
+        <FILE id="K2PHYj" name="LTXLayerManager.cpp" compile="1" resource="0"
+              file="Source/Timeline/LTXLayerManager.cpp"/>
+        <FILE id="Ug3vjx" name="LTXLayerManager.h" compile="0" resource="0"
+              file="Source/Timeline/LTXLayerManager.h"/>
+        <FILE id="fomHsR" name="LTXSequence.cpp" compile="1" resource="0" file="Source/Timeline/LTXSequence.cpp"/>
+        <FILE id="xkuhE8" name="LTXSequence.h" compile="0" resource="0" file="Source/Timeline/LTXSequence.h"/>
+        <FILE id="vSD3TB" name="LTXSequenceManager.cpp" compile="1" resource="0"
+              file="Source/Timeline/LTXSequenceManager.cpp"/>
+        <FILE id="FwtzN0" name="LTXSequenceManager.h" compile="0" resource="0"
+              file="Source/Timeline/LTXSequenceManager.h"/>
+        <FILE id="llesF0" name="PatternClip.cpp" compile="1" resource="0" file="Source/Timeline/PatternClip.cpp"/>
+        <FILE id="qF5nDY" name="PatternClip.h" compile="0" resource="0" file="Source/Timeline/PatternClip.h"/>
+        <FILE id="WgnRkD" name="PatternLayer.cpp" compile="1" resource="0"
+              file="Source/Timeline/PatternLayer.cpp"/>
+        <FILE id="ux7eDR" name="PatternLayer.h" compile="0" resource="0" file="Source/Timeline/PatternLayer.h"/>
+      </GROUP>
+      <GROUP id="{60A97150-E628-394F-EF9B-96C6B880D9A0}" name="Prop">
+        <GROUP id="{C6610A78-DBDD-66F8-C82C-08FE95CCA116}" name="ui">
+          <FILE id="vOKm9I" name="PropManagerUI.cpp" compile="1" resource="0"
+                file="Source/Prop/ui/PropManagerUI.cpp"/>
+          <FILE id="t7PvNp" name="PropManagerUI.h" compile="0" resource="0" file="Source/Prop/ui/PropManagerUI.h"/>
+          <FILE id="mkRJxG" name="PropUI.cpp" compile="1" resource="0" file="Source/Prop/ui/PropUI.cpp"/>
+          <FILE id="y1thKK" name="PropUI.h" compile="0" resource="0" file="Source/Prop/ui/PropUI.h"/>
+        </GROUP>
+        <FILE id="uyr1e1" name="Prop.cpp" compile="1" resource="0" file="Source/Prop/Prop.cpp"/>
+        <FILE id="xYTsts" name="Prop.h" compile="0" resource="0" file="Source/Prop/Prop.h"/>
+        <FILE id="Bk10dp" name="PropManager.cpp" compile="1" resource="0" file="Source/Prop/PropManager.cpp"/>
+        <FILE id="pczISR" name="PropManager.h" compile="0" resource="0" file="Source/Prop/PropManager.h"/>
+      </GROUP>
+      <FILE id="d4yr6x" name="LTXEngine.cpp" compile="1" resource="0" file="Source/LTXEngine.cpp"/>
+      <FILE id="pqZDf4" name="LTXEngine.h" compile="0" resource="0" file="Source/LTXEngine.h"/>
+      <FILE id="jM0wTL" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="tMmZ7T" name="Main.h" compile="0" resource="0" file="Source/Main.h"/>
+      <FILE id="ERSHsk" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="IKiILS" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_HOST_CROSS_PLATFORM_UID="1"
+               JUCE_ALLOW_SPECIAL_CHARS_IN_ADDRESS="1" JUCE_ENABLE_BROADCAST_BY_DEFAULT="1"
+               JUCE_EXCLUSIVE_BINDING_BY_DEFAULT="1" JUCE_IP_AND_PORT_DETECTION="1"/>
+  <EXPORTFORMATS>
+    <VS2019 targetFolder="Builds/VisualStudio2019">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="Play LTX Creator"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Play LTX Creator"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../../Softwares/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../../Softwares/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../../Softwares/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../../Softwares/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../../Softwares/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../../../Softwares/JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../../../../Softwares/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../../Softwares/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../../Softwares/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../../Softwares/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../../Softwares/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../../Softwares/JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../../../../Softwares/JUCE/modules"/>
+        <MODULEPATH id="juce_osc" path="../../../../../../Softwares/JUCE/modules"/>
+        <MODULEPATH id="juce_organicui" path="Modules"/>
+        <MODULEPATH id="juce_timeline" path="Modules"/>
+      </MODULEPATHS>
+    </VS2019>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_organicui" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_osc" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_timeline" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+  </MODULES>
+  <LIVE_SETTINGS>
+    <WINDOWS/>
+  </LIVE_SETTINGS>
+</JUCERPROJECT>
