@@ -15,9 +15,9 @@ LTXPlayCreatorApplication::~LTXPlayCreatorApplication()
 
 void LTXPlayCreatorApplication::initialiseInternal(const String&)
 {
-	AppUpdater::getInstance()->setURLs("http://benjamin.kuperberg.fr/ltxplaycreator/releases/update.json", "http://benjamin.kuperberg.fr/ltxplaycreator/download/", "LTXPlayCreator");
-	HelpBox::getInstance()->helpURL = URL("http://benjamin.kuperberg.fr/ltxplaycreator/help/");
-	CrashDumpUploader::getInstance()->init("http://benjamin.kuperberg.fr/ltxplaycreator/support/crash_report.php", ImageCache::getFromMemory(BinaryData::crash_png, BinaryData::crash_pngSize));
+	AppUpdater::getInstance()->setURLs("http://benjamin.kuperberg.fr/playltxcreator/releases/update.json", "http://benjamin.kuperberg.fr/playltxcreator/download/app/", "PlayLTXCreator");
+	HelpBox::getInstance()->helpURL = URL("http://benjamin.kuperberg.fr/playltxcreator/help/");
+	CrashDumpUploader::getInstance()->init("http://benjamin.kuperberg.fr/playltxcreator/support/crash_report.php", ImageCache::getFromMemory(BinaryData::crash_png, BinaryData::crash_pngSize));
 
 	engine.reset(new LTXEngine());
 
