@@ -31,5 +31,6 @@ public:
     void paint(Graphics& g) override;
     void resizedBlockInternal() override;
 
+
     void controllableFeedbackUpdateInternal(Controllable* c) override;
 };

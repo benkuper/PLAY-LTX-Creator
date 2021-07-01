@@ -14,7 +14,7 @@
 ColorPattern::ColorPattern(var params) :
     Pattern(getTypeString(), params)
 {
-    color = addColorParameter("Color", "Color for this pattern", BLUE_COLOR);
+    color = patternParams.addColorParameter("Color", "Color for this pattern", BLUE_COLOR);
 }
 
 ColorPattern::~ColorPattern()

@@ -20,7 +20,8 @@ class Pattern :
 public:
     Pattern(const String &name = "Pattern", var params = var());
     virtual ~Pattern();
-
+    
+    ControllableContainer patternParams;
 
     virtual PatternUI* createUI();
 };

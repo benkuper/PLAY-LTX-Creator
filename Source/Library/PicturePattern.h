@@ -20,6 +20,9 @@ public:
     ~PicturePattern();
 
     FileParameter* file;
+    IntParameter * horizontalRepetitions;
+    IntParameter * verticalRepetitions;
+    BoolParameter* mirrorV;
 
     PatternUI* createUI() override;
 

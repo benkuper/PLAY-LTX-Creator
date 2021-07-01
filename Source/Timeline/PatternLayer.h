@@ -13,6 +13,7 @@
 #include "JuceHeader.h"
 
 class PatternLayer;
+class PatternClip;
 
 class PatternClipManager :
     public LayerBlockManager
@@ -35,6 +36,19 @@ public:
 
     PatternClipManager clipManager;
 
+    enum PropType { BALL, HOOP, PIXEL144, PIXEL64, PIXEL32, CUSTOM };
+    IntParameter* numPixels;
+    IntParameter* refreshRate;
+
+    EnumParameter* propType;
+    Trigger* exportToPRG;
+
+    void onContainerParameterChangedInternal(Parameter* p) override;
+    void onContainerTriggerTriggered(Trigger* t) override;
+
+    void exportLayer();
+
+    Array<PatternClip *> getValidClips();
 
     SequenceLayerPanel* getPanel() override;
     SequenceLayerTimeline* getTimelineUI() override;

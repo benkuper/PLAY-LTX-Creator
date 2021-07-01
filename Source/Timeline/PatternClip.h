@@ -22,12 +22,21 @@ public:
 
     TargetParameter * patternTarget;
     Pattern* pattern;
+    
+    ControllableContainer patternParams;
 
     void setPattern(Pattern* p);
 
-    void onContainerParameterChangedInternal(Parameter* p) override;
+    void setParamsFromPattern();
+
+
 
     void inspectableDestroyed(Inspectable* i) override;
 
+    void onContainerParameterChangedInternal(Parameter* p) override;
+    void onControllableFeedbackUpdateInternal(ControllableContainer* cc, Controllable * c) override;
+
     String getTypeString() const override { return "Pattern Clip"; }
+
+    //DECLARE_ASYNC_EVENT(PatternClip, PatternClip, patternClip, { PATTERN_UPDATED });
 };

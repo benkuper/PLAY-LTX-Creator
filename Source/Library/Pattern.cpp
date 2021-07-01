@@ -12,9 +12,12 @@
 #include "ui/PatternUI.h"
 
 Pattern::Pattern(const String& name, var params) :
-    BaseItem(name, false)
+    BaseItem(name, false),
+    patternParams("Pattern Parameters")
 {
     itemDataType = "Pattern";
+    saveAndLoadRecursiveData = true;
+    addChildControllableContainer(&patternParams);
 }
 
 Pattern::~Pattern()
